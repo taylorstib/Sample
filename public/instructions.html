@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Instructions</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="instructions">Instructions</h1>
+<h2 id="tracking-delivery-trucks">Tracking Delivery Trucks</h2>
+<p>At Freshly, our shipping pipeline must be efficient since we produce and ship a perishable product. We need insight into when trucks will arrive to pick up food so that customers' food is cooked and packed on time. The goal of the exercise is to build a tool for tracking delivery trucks that are scheduled to pick up our boxes of food and deliver them to customers.</p>
+<p>System requirements:</p>
+<ul>
+<li>Know which facility the truck is scheduled to arrive at</li>
+<li>Know when the trucks are scheduled to arrive</li>
+<li>How many boxes of food they are picking up</li>
+<li>Mark trucks as &quot;checked in&quot; and timestamped when they arrive at the building
+<ul>
+<li><em>They need to be given a late reason if they check in more than 20 minutes after their scheduled arrival time</em></li>
+</ul>
+</li>
+<li>Mark trucks &quot;checked out&quot; and timestamped when they leave
+<ul>
+<li><em>They need to be given a late reason if they check out more than 20 minutes after their scheduled departure time</em></li>
+</ul>
+</li>
+<li>Track the actual number of boxes they loaded and hauled away</li>
+<li>Track the ontime rate for each trucking company after a truck has departed the facility
+<ul>
+<li><strong>Bonus:</strong> make this a general purpose &quot;on time&quot; tracker so it can be used for things like meals being cooked on time per kitchen, boxes being packed per packing line, etc.</li>
+</ul>
+</li>
+</ul>
+<p>All these features will allow the shipping team to track and prevent delays.</p>
+<h2 id="objectives">Objectives</h2>
+<p>This project is <strong>large in scope</strong> and is <strong>not</strong> intended to be complete and with tests during the interview time. We are assessing your problem solving skills and ability to break a large scope of work like this into smaller chunks, as well as your Rails.</p>
+<p><strong>NOTE:</strong></p>
+<ol>
+<li>The user interface does not need to be styled with any CSS or framework. Stock Rails generators or browser defaults are perfectly fine</li>
+<li>Use Faker and seeds to quickly fill in model data if you need</li>
+<li>The test suite is setup for rspec</li>
+</ol>
+
+    </body>
+    </html>
